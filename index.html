@@ -15,5 +15,9 @@
   <body>
     <p>Hello, world!</p>
     <a id="sign-up" href="/">Sign up</a>
+    <script>
+      var a = document.getElementById("sign-up");
+      a.onclick = analytics.track("Sign Up");
+    </script>
   </body>
 </html>
