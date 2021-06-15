@@ -14,10 +14,13 @@
 
   <body>
     <p>Hello, world!</p>
-    <a id="sign-up" href="/">Sign up</a>
+    <a id="sign-up" href="#">Sign up</a>
     <script>
       var a = document.getElementById("sign-up");
-      a.onclick = analytics.track("Sign Up");
+      a.onclick = track("Sign Up");
+      function track(event) {
+        analytics.track(event);
+      }
     </script>
   </body>
 </html>
