@@ -18,9 +18,12 @@
   <body>
     <p>Hello, world!</p>
     <a id="sign-up" href="#">Sign up</a>
+    <a id="about" href="about.html">About</a>
     <script>
-      var a = document.getElementById("sign-up");
-      a.onclick = function() { analytics.track("Sign Up"); }
+      var signUp = document.getElementById("sign-up");
+      var about = document.getElementById("about");
+      signUp.onclick = function() { analytics.track("Sign Up"); }
+      about.onclick = function() { analytics.track("About"); }
     </script>
   </body>
 </html>
